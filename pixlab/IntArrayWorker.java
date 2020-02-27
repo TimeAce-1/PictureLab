@@ -99,7 +99,39 @@ public class IntArrayWorker
     }
   }
  
-  public int getCount()
+  public int getCount(int key)
   {
-      
+      int count = 0;
+     for (int row =0; row < matrix.length; row++){
+         for (int col = 0; col < matrix[0].length; col++)
+         {
+             if (matrix[row][col] == key)
+                count+=1;
+            }
+        }
+        return count;
+}
+
+  public int getLargest()
+    {int max = matrix[0][0];
+        for (int row = 0; row<matrix.length; row++)
+        {
+            for (int col = 0; col < matrix[0].length; col++)
+            {
+                if (max < matrix[row][col])
+                    max = matrix[row][col];
+                }
+            }
+            return max;
+    }
+    
+public int getColTotal(int col)
+{ int colSum = 0;
+    for (int row = 0; row < matrix.length; row++)
+    {
+            colSum = colSum+matrix[row][col];
+ }
+
+    return colSum;
+}
 }
