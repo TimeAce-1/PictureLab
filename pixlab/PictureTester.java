@@ -97,6 +97,23 @@ public class PictureTester
       caterpillar.explore();
     }
     
+  public static void testMirrorHorizontalBotToTop(){
+      Picture caterpillar = new Picture("caterpillar.jpg");
+      caterpillar.mirrorHorizontalBotToTop();
+      caterpillar.explore();
+    }
+    
+  public static void testMirrorDiagonal(){
+      Picture beach = new Picture("beach.jpg");
+      beach.mirrorDiagonal();
+      beach.explore();
+    }
+    
+  public static void testMirrorArms(){
+      Picture snowman = new Picture("snowman.jpg");
+      snowman.mirrorArms();
+      snowman.explore();}
+      
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
