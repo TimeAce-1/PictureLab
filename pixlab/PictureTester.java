@@ -112,8 +112,27 @@ public class PictureTester
   public static void testMirrorArms(){
       Picture snowman = new Picture("snowman.jpg");
       snowman.mirrorArms();
-      snowman.explore();}
+      snowman.explore();
+    }
       
+  public static void testMirrorGull()
+  {
+      Picture gull = new Picture("seagull.jpg");
+      gull.mirrorGull();
+      gull.explore();
+    }
+    
+  public static void testCopyV2(){
+      Picture flower = new Picture("flower1.jpg");
+      flower.copy(flower,100,200,100,200);
+      flower.explore();
+    }
+    
+    public static void testMyCollage(){
+         Picture canvas = new Picture("640x480.jpg");
+    canvas.myCollage();
+    canvas.explore();
+}
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
